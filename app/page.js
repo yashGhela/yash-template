@@ -8,6 +8,7 @@ import LandingFeatures from './Components/LandingFeatures'
 import LandingVideo from './Components/LandingVideo'
 import Modal from './Components/Modal'
 import LandingPrice from './Components/LandingPricing'
+import Interest from './Components/Interest'
 
 
 export default function Home() {
@@ -33,6 +34,8 @@ export default function Home() {
 
 
      <LandingHero />
+
+     <Interest/>
 
      <LandingSteps/>
 
