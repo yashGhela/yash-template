@@ -5,6 +5,9 @@ import LandingHero from './Components/LandingHero'
 
 import LandingSteps from './Components/LandingSteps'
 import LandingFeatures from './Components/LandingFeatures'
+import LandingVideo from './Components/LandingVideo'
+import Modal from './Components/Modal'
+import LandingPrice from './Components/LandingPricing'
 
 
 export default function Home() {
@@ -34,6 +37,12 @@ export default function Home() {
      <LandingSteps/>
 
      <LandingFeatures/>
+
+     <LandingVideo/>
+
+     <LandingPrice/>
+
+
      </div>
 
      

@@ -3,6 +3,7 @@ import {motion} from 'framer-motion'
 import { useRouter } from 'next/navigation';
 import TestimonialAvatars from './TestimonialAvatars';
 import LogoFeature from './LogoFeature';
+import TestimonialBar from './TestimonialBar';
 
 export default function LandingHero(){
 
@@ -25,7 +26,7 @@ export default function LandingHero(){
           
     
         <div className="flex md:flex-col w-full items-center">
-        <button onClick={()=>{router.push('/auth')}} className={`font-bold w-[40%] md:w-[25%] text-white text-xl rounded-md bg-blue-300 hover:bg-blue-400 mt-5  md:h-14 p-2 mr-1`}>Start Now</button>
+        <button onClick={()=>{router.push('/auth')}} className={`font-bold w-[40%] md:w-[25%] text-white text-xl rounded-xl bg-blue-300 hover:bg-blue-400 mt-5  md:h-14 p-2 mr-1`}>Start Now</button>
         <button onClick={()=>{router.push('/auth')}} className='font-normal w-[40%] md:w-[60%] text-gray-400 text-xl rounded-md  mt-2  md:h-14 p-2 mr-1'>Log In</button>
 
       
@@ -33,7 +34,7 @@ export default function LandingHero(){
 
         </div>
         <div className='mt-10'>
-       <TestimonialAvatars/>
+       <TestimonialBar/>
 
         <LogoFeature/>
        </div>
