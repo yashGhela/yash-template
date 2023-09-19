@@ -21,7 +21,7 @@ export default function LandingHero(){
          <p className='md:text-8xl text-6xl font-black text-gray-400'>Build a SAAS</p>
          <p className={`text-transparent text-6xl md:text-8xl bg-clip-text pb-3  bg-gradient-to-r from-blue-400 to-cyan-400 font-black text-gray-700`}>in Days</p>
          
-         <p className='font-bold text-gray-400 mt-4 p-2 md:text-center'>Create apps in days not weeks using this super fast <br/> and easy to use template</p>
+         <p className='font-bold text-gray-400 text-lg mt-4 p-2 md:text-center'>Create apps in days not weeks using this super fast <br/> and easy to use template</p>
          
           
     

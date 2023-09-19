@@ -24,7 +24,7 @@ export default function LandingPrice(){
 
     return(
 
-        <div className="mt-[10%] flex-col">
+        <div className="mt-[10%] flex-col" >
 
             <p className="text-gray-400 text-2xl font-bold">Pricing</p>
 

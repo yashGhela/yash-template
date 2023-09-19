@@ -9,6 +9,8 @@ import LandingVideo from './Components/LandingVideo'
 import Modal from './Components/Modal'
 import LandingPrice from './Components/LandingPricing'
 import Interest from './Components/Interest'
+import LandingAction from './Components/LandingAction'
+import LandingFooter from './Components/LandingFooter'
 
 
 export default function Home() {
@@ -19,7 +21,7 @@ export default function Home() {
 
     
     
-  <div>
+  <div style={{scrollBehavior:'smooth'}}>
      <header>
         <title>Test</title>
       </header>
@@ -39,11 +41,19 @@ export default function Home() {
 
      <LandingSteps/>
 
+     <div id='features'>
      <LandingFeatures/>
+     </div>
 
      <LandingVideo/>
 
+     <div id='pricing'>
      <LandingPrice/>
+     </div>
+
+     <LandingAction/>
+
+     <LandingFooter/>
 
 
      </div>

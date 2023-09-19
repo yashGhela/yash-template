@@ -104,7 +104,7 @@ export default function Auth() {
        <header>
         <title>Sign In</title>
       </header>
-        <div className='mt-52 bg-gray-200 h-[360px] w-[250px] p-5 rounded-md '>
+        <div className='mt-52 bg-gray-100 shadow-2xl  h-[360px] w-[250px] p-5 rounded-md '>
             <button onClick={()=>{signInG()}} className='w-full p-4 rounded-lg text-white font-bold bg-red-300 hover:bg-red-400'>Sign In with Google</button>
             <hr className='mt-2' />
 
