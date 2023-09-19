@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation"
 export default function LandingAction(){
     const router = useRouter()
     return(
-        <div className="my-[30%]">
+        <div className="my-[20%]">
              <p className='md:text-6xl text-3xl font-black text-gray-400'>Start Building Today</p>
              <p className='font-bold text-gray-400 text-lg mt-4 p-2 md:text-center'>No more wasting time</p>
          

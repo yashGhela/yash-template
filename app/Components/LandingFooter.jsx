@@ -32,6 +32,9 @@ export default function LandingFooter(){
 
                 </div>
 
+                <p className="font-bold text-gray-400 py-3 ">Made by Yash Codes</p>
+
+
         </div>
     )
 }

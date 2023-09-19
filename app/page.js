@@ -11,6 +11,7 @@ import LandingPrice from './Components/LandingPricing'
 import Interest from './Components/Interest'
 import LandingAction from './Components/LandingAction'
 import LandingFooter from './Components/LandingFooter'
+import LandingFaq from './Components/LandingFaq'
 
 
 export default function Home() {
@@ -49,6 +50,10 @@ export default function Home() {
 
      <div id='pricing'>
      <LandingPrice/>
+     </div>
+
+     <div id='FAQ'>
+      <LandingFaq/>
      </div>
 
      <LandingAction/>
