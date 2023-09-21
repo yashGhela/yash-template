@@ -17,14 +17,15 @@ export default function LandingFooter(){
         
             <div>
             <p className="font-bold text-gray-400 py-3 ">Legal</p>
-            <Link href='/PrivacyPolicy'    className='text-gray-400 hover:underline  py-3 cursor-pointer'>Privacy Policy</Link><br/>
+            <Link scroll={true} href='/PrivacyPolicy'    className='text-gray-400 hover:underline  py-3 cursor-pointer'>Privacy Policy</Link><br/>
             <Link href='/TermsAndConditions'  className='text-gray-400 hover:underline  py-3 cursor-pointer'>Terms and Conditions</Link>
             </div>
 
             <div>
-            <p className="font-bold text-gray-400 py-3 ">Links</p>
+            <p className="font-bold text-gray-400 py-3 flex-col ">Links</p>
             <Link href='/#pricing'    className='text-gray-400 hover:underline  py-3 cursor-pointer'>Pricing</Link><br/>
-            <Link href='/#features'  className='text-gray-400 hover:underline  py-3 cursor-pointer'>Features</Link>
+            <Link href='/#features'  className='text-gray-400 hover:underline  py-3 cursor-pointer'>Features</Link><br/>
+            <Link href='/#How-it-works'  className='text-gray-400 hover:underline  py-3 cursor-pointer'>How it works</Link>
             </div>
                
 

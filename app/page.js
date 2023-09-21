@@ -7,11 +7,12 @@ import LandingSteps from './Components/LandingSteps'
 import LandingFeatures from './Components/LandingFeatures'
 import LandingVideo from './Components/LandingVideo'
 import Modal from './Components/Modal'
-import LandingPrice from './Components/LandingPricing'
+
 import Interest from './Components/Interest'
 import LandingAction from './Components/LandingAction'
 import LandingFooter from './Components/LandingFooter'
 import LandingFaq from './Components/LandingFaq'
+import Pricing from './Components/LandingPricing'
 
 
 export default function Home() {
@@ -25,6 +26,7 @@ export default function Home() {
   <div style={{scrollBehavior:'smooth'}}>
      <header>
         <title>Test</title>
+        <script src="https://assets.lemonsqueezy.com/lemon.js" defer></script>
       </header>
       <main className=' flex self-center place-content-center  bg-gray-100 text-center p-5 max-w-full min-w-screen  min-h-screen max-h-full overflow-hidden '>
      
@@ -40,7 +42,9 @@ export default function Home() {
 
      <Interest/>
 
-     <LandingSteps/>
+     <div id='How-it-works'>
+     <LandingSteps/> 
+     </div>
 
      <div id='features'>
      <LandingFeatures/>
@@ -49,7 +53,7 @@ export default function Home() {
      <LandingVideo/>
 
      <div id='pricing'>
-     <LandingPrice/>
+     <Pricing landing={true}/>
      </div>
 
      <div id='FAQ'>

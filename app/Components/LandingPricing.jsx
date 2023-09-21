@@ -1,11 +1,22 @@
 'use client'
-import { useRouter } from "next/navigation"
 
-export default function LandingPrice(){
+import { useRouter } from "next/navigation"
+import { useEffect } from "react"
+
+
+export default function Pricing({landing}){
+
+   
 
     const router= useRouter()
-
     
+
+    const handleFree=async()=>{
+        //Make user free
+    }
+
+
+   
 
     const benefits=[
         'Benefit 1',
@@ -22,9 +33,15 @@ export default function LandingPrice(){
         'Benefit 5'
     ]
 
+
+ 
+
     return(
 
-        <div className="mt-[10%] flex-col" >
+        <div className="mt-[7%] flex-col" >
+
+        
+           
 
             <p className="text-gray-400 text-2xl font-bold">Pricing</p>
 
@@ -52,10 +69,18 @@ export default function LandingPrice(){
 
 
                     </div>
+                    {landing?
                     <button onClick={()=>{router.push('/auth')}} className=" w-[90%] mt-10 font-bold text-white p-5 rounded-xl bg-gray-300 hover:bg-gray-400 ">
                    
                     Start Now!
+                    </button>:
+
+                    <button onClick={()=>{handleFree()}} className=" w-[90%] mt-10 font-bold text-white p-5 rounded-xl bg-gray-300 hover:bg-gray-400 ">
+                                    
+                    Start Now!
                     </button>
+                    
+                    }
                 </div>
 
                 
@@ -86,10 +111,15 @@ export default function LandingPrice(){
 
 
                     </div>
+                   {landing?
                     <button onClick={()=>{router.push('/auth')}} className=" w-[90%] mt-10 font-bold text-white p-5 rounded-xl bg-blue-300 hover:bg-blue-400 ">
                    
                     Start Now!
+                    </button>:
+                    <button  className=" w-[90%] mt-10 font-bold text-white p-5 rounded-xl bg-blue-300 hover:bg-blue-400 ">
+                   <a href="https://artfolio.lemonsqueezy.com/checkout/buy/c9ae10bc-5a85-4896-9730-4a4a195bd4fd?embed=1" class="lemonsqueezy-button">Buy Artfolio Subscription</a><script src="https://assets.lemonsqueezy.com/lemon.js" defer></script>
                     </button>
+                    }
                 </div>
             </div>
 

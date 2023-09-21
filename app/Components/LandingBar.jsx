@@ -7,9 +7,9 @@ export default function LandingBar(){
       
      
       <div className='mt-4 md:ml-[20%] -ml-52  flex'>
-       <p  className={`text-gray-500 sm:invisible invisible md:visible ml-8 cursor-pointer`}>Examples</p>
+      <Link href='/#features'  className={`text-gray-500 sm:invisible invisible md:visible ml-8 cursor-pointer`}>Features</Link>
         <Link href='/#pricing'  className={`text-gray-500 sm:invisible invisible md:visible ml-8 cursor-pointer`}>Pricing</Link>
-        <p className={`text-gray-500 sm:invisible invisible md:visible ml-8 cursor-pointer`}>Use Cases</p>
+       
         
        </div>
 

@@ -100,10 +100,7 @@ export default function Auth() {
 
 
   return (
-    <div className={`md:scale-110 flex self-center place-content-center  bg-gray-100 text-center p-5 max-w-full min-w-screen  min-h-screen max-h-full overflow-hidden`}>
-       <header>
-        <title>Sign In</title>
-      </header>
+ 
         <div className='mt-52 bg-gray-100 shadow-2xl  h-[360px] w-[250px] p-5 rounded-md '>
             <button onClick={()=>{signInG()}} className='w-full p-4 rounded-lg text-white font-bold bg-red-300 hover:bg-red-400'>Sign In with Google</button>
             <hr className='mt-2' />
@@ -117,6 +114,6 @@ export default function Auth() {
             
 
         </div>
-    </div>
+   
   )
 }
