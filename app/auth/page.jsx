@@ -1,7 +1,9 @@
 import Auth from "../Components/Auth"
+//import { auth } from "../firebaseConfig"
 
 export default function AuthPage() {
     
+  //const user= auth.currentUser
 
     
 

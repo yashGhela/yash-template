@@ -1,3 +1,4 @@
+//import { auth } from "../firebaseConfig"
 
 async function getStuff(){
     return null
@@ -5,6 +6,8 @@ async function getStuff(){
 
 
 export default  function Dashboard(){
+
+    //const user= auth.currentUser
     return(
         <div>
         <header>
@@ -15,7 +18,7 @@ export default  function Dashboard(){
    
 
      <div className=' md:w-[70rem] lg:w-[80rem] w-[40rem] mr-0 flex-col'>
-        <p className='text-3xl  font-bold text-gray-800 '>Dashboard</p>
+        <p className='text-3xl mt-[5%] text-left  font-normal text-gray-600 '>Dashboard</p>
         </div>
    
         

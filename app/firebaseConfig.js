@@ -17,4 +17,4 @@ const storage= getStorage(app)
 
 
 
-export {db,auth,analytics, provider, storage, functions}
+export {db,auth,analytics, provider, storage}

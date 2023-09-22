@@ -3,10 +3,13 @@ import Link from "next/link"
 import Pricing from "../Components/LandingPricing"
 import { useEffect } from "react"
 import { useRouter } from "next/navigation"
+//import { auth } from "../firebaseConfig"
 
 
 export default function Payment(){
 
+
+  //const user= auth.currentUser
 
     const router =useRouter()
     //Code here works 

@@ -117,7 +117,7 @@ export default function Pricing({landing}){
                     Start Now!
                     </button>:
                     <button  className=" w-[90%] mt-10 font-bold text-white p-5 rounded-xl bg-blue-300 hover:bg-blue-400 ">
-                   <a href="https://artfolio.lemonsqueezy.com/checkout/buy/c9ae10bc-5a85-4896-9730-4a4a195bd4fd?embed=1" class="lemonsqueezy-button">Buy Artfolio Subscription</a><script src="https://assets.lemonsqueezy.com/lemon.js" defer></script>
+                   {/*Your link here: <a href="https://artfolio.lemonsqueezy.com/checkout/buy/c9ae10bc-5a85-4896-9730-4a4a195bd4fd?embed=1" class="lemonsqueezy-button">Buy Artfolio Subscription</a><script src="https://assets.lemonsqueezy.com/lemon.js" defer></script> */}
                     </button>
                     }
                 </div>
