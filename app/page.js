@@ -1,5 +1,4 @@
-import Image from 'next/image'
-import Link from 'next/link'
+
 import LandingBar from './Components/LandingBar'
 import LandingHero from './Components/LandingHero'
 
@@ -13,9 +12,12 @@ import LandingAction from './Components/LandingAction'
 import LandingFooter from './Components/LandingFooter'
 import LandingFaq from './Components/LandingFaq'
 import Pricing from './Components/LandingPricing'
+import SEO from './Components/SEO'
+
 
 
 export default function Home() {
+  
 
 
 
@@ -24,12 +26,10 @@ export default function Home() {
     
     
   <div style={{scrollBehavior:'smooth'}}>
-     <header>
-        <title>Test</title>
-        <script src="https://assets.lemonsqueezy.com/lemon.js" defer></script>
-      </header>
+    
       <main className=' flex self-center place-content-center  bg-gray-100 text-center p-5 max-w-full min-w-screen  min-h-screen max-h-full overflow-hidden '>
-     
+      <SEO/>
+    
    
 
      <div className=' md:w-[70rem] lg:w-[80rem] w-[25rem] mr-0 flex-col'>
