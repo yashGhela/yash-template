@@ -25,3 +25,33 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+
+/* width */
+::-webkit-scrollbar { 
+  width: 10px; 
+} 
+
+/* Track */
+::-webkit-scrollbar-track { 
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));; 
+} 
+
+/* Handle */
+::-webkit-scrollbar-thumb { 
+  background: #bdbdbd; 
+  border-radius: 5px; 
+} 
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover { 
+  background: #adadad; 
+}
+
+
+
+input::-webkit-color-swatch {
+  border: none;
+  outline: none;
+}

@@ -3,12 +3,17 @@
 import { useEffect, useState } from "react"
 import Modal from "./Modal"
 import LemonSqueezy from "@lemonsqueezy/lemonsqueezy.js"
+import { getCookie } from "cookies-next"
+import { useRouter } from "next/navigation"
 
 //import { auth } from "../firebaseConfig"
 
 
 export default function CancelSub(){
 
+  
+  const user= getCookie('useraidt')
+  const router= useRouter()
 
     const ls= new LemonSqueezy(process.env.LEMON_KEY)
     const [showModal,setShowModal]=useState(false)

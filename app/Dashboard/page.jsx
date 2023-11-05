@@ -18,7 +18,7 @@ export default  function Dashboard(){
    
 
      <div className=' md:w-[70rem] lg:w-[80rem] w-[40rem] mr-0 flex-col'>
-        <p className='text-3xl mt-[5%] text-left  font-normal text-gray-600 '>Dashboard</p>
+     <DashNav page={'Dashboard'} />
         </div>
    
         

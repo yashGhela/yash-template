@@ -13,37 +13,38 @@ export default function Payment(){
 
     const router =useRouter()
     //Code here works 
-    useEffect(()=>{
+    /*useEffect(()=>{
+      
+        
+      try{
         LemonSqueezy.Setup({
-            eventHandler: async (event) => {
+          eventHandler: async (event) => {
 
-                if(event.event==='Checkout.Success'){
-                    console.log(event)
-                }
-                   /*if (event.event==='Checkout.Success'){
-                    await setDoc(doc(db,'Users',user,'SubscriptionDetails','sub'),{
-                      data: event
-                    }).then(async(snap)=>{
-                      updateDoc(doc(db, 'Users', user), {
-                        approved: true,
-                        SON: format(new Date(), 'yyyy/MM/dd')
-                      }).then(async (snap)=>{
-                        await updateDoc(doc(db,'Folios','List'),{
-                          List: arrayUnion(folio)
-                        })
-            
-                      }).then((snap)=>{
-                  
-                        LemonSqueezy.Url.Close()
-                        router.push('/Build')
-                      })
-            
+              
+                 if (event.event==='Checkout.Success'){
+                  await setDoc(doc(db,'Users',user,'SubscriptionDetails','sub'),{
+                    data: event
+                  }).then(async(snap)=>{
+                    updateDoc(doc(db, 'Users', user), {
+                      paid: true,
+                     
+                    }).then((snap)=>{
+                
+                      LemonSqueezy.Url.Close()
+                      router.push('/Dashboard')
                     })
-                   }*/
-            }
-          })
           
-    },[])
+                  })
+                 }
+          }
+        })
+      }catch(error){
+        console.log(error)
+      
+      }
+      }
+        
+  ,[])*/
 
 
 
@@ -53,6 +54,7 @@ export default function Payment(){
 
     return(
         <main className=' flex self-center place-content-center  bg-gray-100 text-center p-5 max-w-full min-w-screen  min-h-screen max-h-full overflow-hidden '>
+           <script src="https://app.lemonsqueezy.com/js/lemon.js" defer></script>
             <header>
                 <title>Payments</title>
                 <script src="https://assets.lemonsqueezy.com/lemon.js" defer></script>

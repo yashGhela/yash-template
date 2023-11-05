@@ -2,6 +2,7 @@
 'use client'
 import { signOut } from "firebase/auth";
 import { useRouter } from "next/navigation";
+import { deleteCookie, getCookie } from "cookies-next";
 //import { auth } from "../firebaseConfig"
 
 export default function LogOut(){
@@ -11,7 +12,7 @@ export default function LogOut(){
 
     /*const logOut=()=>{
         signOut(auth).then(()=>{
-          
+          deleteCookie('useraidt')
           router.push('/')
           
         })
