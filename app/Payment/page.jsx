@@ -3,10 +3,12 @@ import Link from "next/link"
 import Pricing from "../Components/LandingPricing"
 import { useEffect } from "react"
 import { useRouter } from "next/navigation"
-//import { auth } from "../firebaseConfig"
+import { getCookie } from "cookies-next"
+import { doc, setDoc, updateDoc } from "firebase/firestore"
+//import { db } from "../firebaseConfig"
 
 
-export default function Payment(){
+function Payment(){
 
 
   //const user= auth.currentUser
@@ -75,3 +77,5 @@ export default function Payment(){
         </main>
     )
 }
+
+// export default withAuth(Payment)

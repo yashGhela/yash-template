@@ -1,15 +1,15 @@
-
+'use client'
 
 //import { auth } from "../firebaseConfig"
 
-import CancelSub from "@/app/Components/CancelSub";
-import LogOut from "@/app/Components/LogOut";
+import CancelSub from "../../Components/CancelSub";
+import LogOut from "../../Components/LogOut";
 
 
 
 
 
-export default  function Settings(){
+  function Settings(){
 
     //const user= auth.currentUser
 
@@ -47,3 +47,5 @@ export default  function Settings(){
      </div>
     )
 }
+
+// export default withAuth(Settings)

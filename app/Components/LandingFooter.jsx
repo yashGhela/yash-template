@@ -1,5 +1,6 @@
 
 import Link from "next/link"
+import { SmoothScrollLink } from "./SmoothScrollLink"
 
 
 
@@ -23,9 +24,11 @@ export default function LandingFooter(){
 
             <div>
             <p className="font-bold text-gray-400 py-3 flex-col ">Links</p>
-            <Link href='/#pricing'    className='text-gray-400 hover:underline  py-3 cursor-pointer'>Pricing</Link><br/>
-            <Link href='/#features'  className='text-gray-400 hover:underline  py-3 cursor-pointer'>Features</Link><br/>
-            <Link href='/#How-it-works'  className='text-gray-400 hover:underline  py-3 cursor-pointer'>How it works</Link>
+            <SmoothScrollLink to='features' >Features</SmoothScrollLink><br/>
+             <SmoothScrollLink to='pricing' >Pricing</SmoothScrollLink><br/>
+            <SmoothScrollLink to='How-it-works'  >How it works</SmoothScrollLink><br/>
+
+            <SmoothScrollLink to='Examples'  >Examples</SmoothScrollLink><br/>
             </div>
                
 

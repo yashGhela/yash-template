@@ -100,12 +100,14 @@ export default function Auth() {
       }
 
      
-      useEffect(()=>{
+     useEffect(()=>{
 
-        const currentUrl = window.location.hash;
+
+        const searchParams = new URLSearchParams(window.location.search);
+        const state = searchParams.get('state');
         
-        if (currentUrl==='#login'){
-          setChecked(true)
+        if (state === 'Login') {
+          setChecked(true);
         }
 
       },[])*/

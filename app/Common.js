@@ -1,5 +1,5 @@
 //import { doc, getDoc } from "firebase/firestore"
-//import { db } from "./firebaseConfig"
+//import { auth,db } from "./firebaseConfig"
 
 export const grabPro=async({user, setisPro})=>{
 
@@ -16,3 +16,32 @@ export const grabPro=async({user, setisPro})=>{
   
 
 }
+
+
+export const withAuth=(WrappedComponent)=>{
+    const WithAuth= (props) => {
+      const [user, setUser] = useState(null);
+      const router = useRouter()
+  
+      useEffect(() => {
+        const unsubscribe = auth.onAuthStateChanged((authUser) => {
+          if (authUser) {
+            // User is logged in
+            setUser(authUser);
+          } else {
+            // User is not logged in
+            setUser(null);
+            router.push('/auth?state=Login')
+  
+          }
+        });
+  
+        // Unsubscribe when the component unmounts
+        return () => unsubscribe();
+      }, []);
+  
+      return <WrappedComponent user={user} {...props} />;
+    };
+  
+    return WithAuth
+  }

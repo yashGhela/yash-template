@@ -1,11 +1,17 @@
+
+'use client'
+
+
 //import { auth } from "../firebaseConfig"
+
+import { DashNav } from "../Components/DashNav"
 
 async function getStuff(){
     return null
 }
 
 
-export default  function Dashboard(){
+  function Dashboard(){
 
     //const user= auth.currentUser
     return(
@@ -28,3 +34,6 @@ export default  function Dashboard(){
      </div>
     )
 }
+
+
+// export default withAuth(Dashboard)

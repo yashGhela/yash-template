@@ -1,4 +1,4 @@
-
+'use client'
 import LandingBar from './Components/LandingBar'
 import LandingHero from './Components/LandingHero'
 
@@ -13,11 +13,16 @@ import LandingFooter from './Components/LandingFooter'
 import LandingFaq from './Components/LandingFaq'
 import Pricing from './Components/LandingPricing'
 import SEO from './Components/SEO'
+import LandingDemo from './Components/LandingDemo'
+import { Element } from 'react-scroll'
+import LandingExamples from './Components/LandingExamples'
+
 
 
 
 export default function Home() {
   
+
 
 
 
@@ -35,30 +40,40 @@ export default function Home() {
      <div className=' md:w-[70rem] lg:w-[80rem] w-[25rem] mr-0 flex-col'>
 
       
-     <LandingBar/>
+     <LandingBar isLand={true}/>
+     
 
 
      <LandingHero />
 
      <Interest/>
 
-     <div id='How-it-works'>
+     
+    <Element id='Demo' >
+      <LandingDemo/>
+    </Element>
+
+     <Element id='Examples'>
+      <LandingExamples/>
+     </Element>
+
+     <Element id='How-it-works'>
      <LandingSteps/> 
-     </div>
+     </Element>
 
-     <div id='features'>
+     <Element name='features'>
      <LandingFeatures/>
-     </div>
+     </Element>
 
-     <LandingVideo/>
+     
 
-     <div id='pricing'>
+     <Element name='pricing'>
      <Pricing landing={true}/>
-     </div>
+     </Element>
 
-     <div id='FAQ'>
+     <Element name='FAQ'>
       <LandingFaq/>
-     </div>
+     </Element>
 
      <LandingAction/>
 
