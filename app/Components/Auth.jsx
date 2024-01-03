@@ -122,18 +122,18 @@ export default function Auth() {
   return (
  
     <div className='mt-52  mr-14  sm:-ml-20  md:ml-[10%]'>
-            <button className="p-2 bg-gray-00 text-gray-700 font-bold bg-gray-200 hover:bg-gray-300 rounded-xl" onClick={()=>{if (checked){setChecked(false)}else{setChecked(true)}}}>{checked? "Sign Up" : "Login" }</button>
+            <button className="p-2 bg-gray-00 text-gray-700 shadow-md font-bold bg-gray-200 hover:bg-gray-300 rounded-xl" onClick={()=>{if (checked){setChecked(false)}else{setChecked(true)}}}>{checked? "Sign Up" : "Login" }</button>
 
-          <div className='mt-5 bg-gray-100  shadow-2xl shadow-pink-300 border-[3px] border-pink-300  h-[360px] w-[250px] p-5 rounded-xl '>
-            <button onClick={()=>{signInG()}} className='w-full p-4 rounded-lg text-white font-bold bg-red-400 hover:bg-red-600'>Sign In with Google</button>
+          <div className='mt-5 bg-gray-100  shadow-2xl border-gray-300 border  h-[360px] w-[250px] p-5 rounded-xl '>
+            <button onClick={()=>{signInG()}} className='w-full p-4 rounded-lg text-white font-bold bg-red-500 hover:bg-red-700'>Sign In with Google</button>
             <hr className='mt-2' />
 
            
-            <input  onChange={(e)=>{setEmail(e.target.value)}}  className='p-2 w-full bg-gray-300 rounded-lg mt-2 text-gray-600 font-bold focus:outline-none ' type="email" placeholder='leodavinci@email.com'/>
-            <input onChange={(e)=>{setPassword(e.target.value)}} className='p-2 w-full bg-gray-300 rounded-lg mt-2 text-gray-600 font-bold focus:outline-none ' type="password" placeholder='******'/>
+            <input  onChange={(e)=>{setEmail(e.target.value)}}  className='p-2 w-full bg-gray-100 border border-gray-300 rounded-lg mt-2 text-gray-900 font-normal focus:outline-none ' type="email" placeholder='leodavinci@email.com'/>
+            <input onChange={(e)=>{setPassword(e.target.value)}} className='p-2 w-full bg-gray-100 border border-gray-300 rounded-lg mt-2 text-gray-900 font-normal focus:outline-none ' type="password" placeholder='******'/>
             
-            {checked?<button id='login' onClick={()=>{signInEp()}} className='w-full p-4 rounded-lg mt-3 text-white font-bold bg-gray-600 hover:bg-gray-700'>Log In </button>:
-            <button onClick={()=>{signUpEp()}} className='w-full p-4 rounded-lg mt-3 text-white font-bold bg-gray-600 hover:bg-gray-700'>Sign Up </button>}
+            {checked?<button id='login' onClick={()=>{signInEp()}} className='w-full p-4 rounded-lg mt-3 text-white font-bold shadow-lg bg-gray-400 hover:bg-gray-500'>Log In </button>:
+            <button onClick={()=>{signUpEp()}} className='w-full p-4 rounded-lg mt-3 text-white font-bold bg-gray-400 hover:bg-gray-500'>Sign Up </button>}
             <p  className='text-gray-500 mt-4 text-xs  cursor-pointer'>By signing up you agree to our <Link href='/TermsAndConditions'  className='text-gray-500 mt-4  cursor-pointer underline'>Terms and Conditions</Link> and our <Link href='/PrivacyPolicy' className='text-gray-500 mt-4  cursor-pointer underline'>Privacy Policy</Link> </p>
             
             
