@@ -10,7 +10,7 @@ export default function LandingHero(){
     const router=useRouter()
     return(
         <motion.div 
-        className='mt-20 mx-10 md:ml-0  md:items-center items-center text-left p-5 flex '
+        className='mt-20 mx-10   md:items-center items-center text-left p-5 flex '
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: false  }}
@@ -19,12 +19,12 @@ export default function LandingHero(){
        > 
           
 
-        <div className='md:px-32 flex-1'>
+        <div className=' flex-1'>
 
       
 
             
-        <p className={`text-transparent mt-7 text-6xl md:text-6xl bg-clip-text pb-3  bg-gradient-to-r from-blue-300 to-cyan-400 font-bold text-gray-700`}>Create  a beautiful portfolio in minutes</p>
+        <p className={`text-transparent mt-7 text-6xl md:text-6xl bg-clip-text pb-3  bg-gradient-to-r from-blue-300 to-blue-800 font-bold text-gray-700`}>Create  a beautiful portfolio in minutes</p>
          
          <p className='font-lighter text-gray-500 text-lg mt-4 p-2 md:text-left'>
         Wake up to a flood of job opportunities and freelance gigs in your inbox. Say goodbye to confusing editors and hello to more time doing what you love. Boost your visibility, job prospects, and impressions effortlessly with Artfolio.</p>

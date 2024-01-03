@@ -4,7 +4,7 @@ export default function LandingDemo(){
 
 
     return(
-        <div className='bg-gradient-to-r from-pink-700 to-purple-700 rounded-xl w-full my-20 px-10 h-full p-5'>
+        <div className='bg-gradient-to-r from-blue-300 to-blue-700 rounded-xl w-full my-20 px-10 h-full p-5'>
         <iframe src={'https://artfolio.space/leodavinci'} className='w-full  h-[50rem] border-[0.4rem] border-gray-300 rounded-xl' ></iframe>
 
         <button  onClick={()=>{window.open((`https://artfolio.space/leodavinci`))}} className="border border-gray-400 bg-gray-100 mt-4 hover:bg-gray-300 p-3 rounded-lg "> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">

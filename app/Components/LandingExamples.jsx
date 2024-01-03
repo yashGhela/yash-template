@@ -12,8 +12,8 @@ export default function LandingExamples(){
 
         <div>
 
-            <p className="text-pink-400 text-2xl font-normal mx-10">Check out how the Master's use it</p>
-            <div className="mt-[10%] flex-col md:grid md:grid-cols-2 gap-5">
+            <p className="text-blue-400 text-2xl font-normal mx-10">Check out how the Master's use it</p>
+            <div className="mt-[10%] px-36 flex-col md:grid md:grid-cols-2 gap-5">
 
             <motion.div onClick={()=>{router.push(`/Discover/picasso`)}} whileHover={{scale:1.05}}  className="p-6 rounded-lg  cursor-pointer bg-gray-300 text-left flex font-bold text-xl text-gray-500 w-full">
                 <div>
