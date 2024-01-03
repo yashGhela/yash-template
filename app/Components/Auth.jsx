@@ -121,7 +121,7 @@ export default function Auth() {
 
   return (
  
-        <div className='mt-52'>
+    <div className='mt-52  mr-14  sm:-ml-20  md:ml-[10%]'>
             <button className="p-2 bg-gray-00 text-gray-700 font-bold bg-gray-200 hover:bg-gray-300 rounded-xl" onClick={()=>{if (checked){setChecked(false)}else{setChecked(true)}}}>{checked? "Sign Up" : "Login" }</button>
 
           <div className='mt-5 bg-gray-100  shadow-2xl shadow-pink-300 border-[3px] border-pink-300  h-[360px] w-[250px] p-5 rounded-xl '>

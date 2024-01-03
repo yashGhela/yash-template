@@ -1,7 +1,7 @@
 export default function LandingFeatures(){
 
     return(
-        <div className="mt-[10%] flex-col">
+        <div className="mt-[10%] w-[80%] lg:mx-40 md:mx-20 flex-col">
 
         <p className="text-gray-400 text-2xl font-bold">Features</p>
 
@@ -21,7 +21,7 @@ export default function LandingFeatures(){
 
 
             </div>
-            <div className="bg-gray-100 shadow-2xl shadow-pink-300 rounded-xl p-5 md:ml-7 w-full mb-7 lg:w-[200%] h-96 md:h-72">
+            <div className="bg-gray-100 shadow-2xl shadow-pink-300 rounded-xl p-5 md:ml-7 md:w-[196%] w-full mb-7 lg:w-[196%] h-96 md:h-72">
 
             <div className=" bg-pink-200 rounded-full p-5 w-16 h-16 m-2">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
@@ -38,7 +38,7 @@ export default function LandingFeatures(){
             
             <br/>
 
-            <div className="bg-gray-100 shadow-2xl shadow-green-300 rounded-xl p-5 mt-7 mr-7 mb-7 w-full lg:w-[200%] h-96 md:h-72">
+            <div className="bg-gray-100 shadow-2xl shadow-green-300 rounded-xl md:w-[196%] p-5 mt-7 mr-7 mb-7 w-full lg:w-[194%] h-96 md:h-72">
 
             <div className=" bg-green-200 rounded-full p-5 w-16 h-16 m-2">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
@@ -53,7 +53,7 @@ export default function LandingFeatures(){
 
             </div>
 
-            <div className="bg-gray-100 shadow-2xl shadow-yellow-300 rounded-xl mt-7 md:ml-[105%] p-5 w-full md:w-full h-72">
+            <div className="bg-gray-100 shadow-2xl shadow-yellow-300 rounded-xl mt-7 md:ml-[99%] p-5 w-full md:w-full h-72">
 
             <div className=" bg-yellow-200 rounded-full p-5 w-16 h-16 m-2">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">

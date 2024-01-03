@@ -12,10 +12,10 @@ export default function LandingExamples(){
 
         <div>
 
-            <p className="text-pink-400 text-2xl font-normal">Check out how the Master's use it</p>
+            <p className="text-pink-400 text-2xl font-normal mx-10">Check out how the Master's use it</p>
             <div className="mt-[10%] flex-col md:grid md:grid-cols-2 gap-5">
 
-            <motion.div onClick={()=>{router.push(`/Discover/picasso`)}} whileHover={{scale:1.05}}  className="p-6 rounded-lg m-5 cursor-pointer bg-gray-300 text-left flex font-bold text-xl text-gray-500 w-full">
+            <motion.div onClick={()=>{router.push(`/Discover/picasso`)}} whileHover={{scale:1.05}}  className="p-6 rounded-lg  cursor-pointer bg-gray-300 text-left flex font-bold text-xl text-gray-500 w-full">
                 <div>
                 <p>Pablo Picasso's Portfolio</p>
 
@@ -26,7 +26,7 @@ export default function LandingExamples(){
 
             </motion.div>
 
-            <motion.div onClick={()=>{router.push(`/Discover/monet`)}} whileHover={{scale:1.05}}  className="p-6 rounded-lg m-5 cursor-pointer bg-gray-300 text-left flex font-bold text-xl text-gray-500 w-full">
+            <motion.div onClick={()=>{router.push(`/Discover/monet`)}} whileHover={{scale:1.05}}  className="p-6 rounded-lg  cursor-pointer bg-gray-300 text-left flex font-bold text-xl text-gray-500 w-full">
                 <div>
                 <p>Claude Monet's Portfolio</p>
 
@@ -38,7 +38,7 @@ export default function LandingExamples(){
             </motion.div>
             
 
-            <motion.div onClick={()=>{router.push(`/Discover/salvadordali`)}} whileHover={{scale:1.05}}  className="p-6 rounded-lg m-5 cursor-pointer bg-gray-300 text-left flex font-bold text-xl text-gray-500 w-full">
+            <motion.div onClick={()=>{router.push(`/Discover/salvadordali`)}} whileHover={{scale:1.05}}  className="p-6 rounded-lg cursor-pointer bg-gray-300 text-left flex font-bold text-xl text-gray-500 w-full">
                 <div>
                 <p>Salvador Dali's Portfolio</p>
 
@@ -49,7 +49,7 @@ export default function LandingExamples(){
 
             </motion.div>
 
-            <motion.div onClick={()=>{router.push(`/Discover/vangogh`)}} whileHover={{scale:1.05}}  className="p-6 rounded-lg m-5 cursor-pointer bg-gray-300 text-left flex font-bold text-xl text-gray-500 w-full">
+            <motion.div onClick={()=>{router.push(`/Discover/vangogh`)}} whileHover={{scale:1.05}}  className="p-6 rounded-lg cursor-pointer bg-gray-300 text-left flex font-bold text-xl text-gray-500 w-full">
                 <div>
                 <p>Vincent Van Gogh's Portfolio</p>
 

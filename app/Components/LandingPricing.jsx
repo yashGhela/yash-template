@@ -47,7 +47,7 @@ export default function Pricing({landing}){
 
             <div className="md:grid md:grid-cols-2 flex-col mt-20">
 
-                <div className="md:w-[70%] w-full md:ml-40 rounded-xl h-[35rem] shadow-2xl ">
+                <div className="md:w-[70%] lg:w-[50%] w-full md:ml-[40%] rounded-xl h-[35rem] shadow-2xl ">
 
                     <p className='font-bold text-xl text-left text-gray-400 mt-4 p-6 '>Starter</p>
 
@@ -85,7 +85,7 @@ export default function Pricing({landing}){
 
                 
 
-                <div className="md:w-[70%] mt-10 md:mt-0 md:ml-20 w-full rounded-xl h-[42rem] shadow-2xl shadow-blue-300 border-[3px] border-blue-300 ">
+                <div className="md:w-[70%] lg:w-[50%] mt-10 md:mt-0 md:ml-20 w-full rounded-xl h-[42rem] shadow-2xl shadow-blue-300 border-[3px] border-blue-300 ">
 
                 <p className='font-bold text-sm mt-3  text-gray-100  py-2 w-20 text-center bg-blue-300 ml-[40%] rounded-md   '>Popular</p>
 

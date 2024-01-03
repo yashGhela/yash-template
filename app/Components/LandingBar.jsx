@@ -3,8 +3,8 @@ import { SmoothScrollLink } from "./SmoothScrollLink";
 
 export default function LandingBar({isLand}){
     return(
-        <div className={`flex ml-2  md:w-[90%] sm:w-full  md:ml-[25%] lg:ml-[10%]   h-14 rounded-md mt-0 text-center`}>
-        <p className={` text-gray-500 font-bold ml-[10%] md:ml-5 mt-4`}>Project Name </p>
+        <div className={`flex justify-center items-center ml-10 lg:mx-[10%] w-full md:w-[90%] lg:w-[80%] h-14 rounded-md mt-0 text-center`}>
+        <p className={` text-gray-500 font-bold   mt-4`}>Project Name </p>
       
      
         {isLand?
